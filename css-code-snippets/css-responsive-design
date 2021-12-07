@@ -1,0 +1,34 @@
+@media only screen and (max-width: 480px) {
+  .page-title {
+    width: 270px;
+  }
+}
+/*when separated by 'and' all conditions have to be met, when separated by a comma only one has to be met*/
+@media only screen and (min-width: 320px) and (max-width: 480px), (orientation: portrait) {
+  .gallery-item .thumbnail {
+    width: 95%;
+  }
+}
+/*only high resolution screens can see this logo*/
+@media only screen and (min-resolution: 150dpi) {
+  .logo {
+    background-image: url("../img/spaceship@2x.png");
+  }
+}
+/*makes font bigger for low resolution screens*/
+@media only screen and (max-resolution: 150dpi) and (max-width: 480px) {
+  .page-description {
+    font-size: 20px;
+  }
+}
+/*when on a tablet in landscape mode the title and description will float left to the pictures*/
+@media only screen and (min-width: 768px) and (max-width: 1024px) and (orientation: landscape) {
+  .page-title, .page-description {
+  float: left;
+    width: 20em;
+}
+ 
+.page-description {
+    text-align: left;
+}
+}

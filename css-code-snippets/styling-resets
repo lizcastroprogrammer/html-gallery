@@ -1,0 +1,5 @@
+/*resets default css styling to 0, put at the top of every stylesheet*/
+* {
+  margin: 0;
+  padding: 0;
+}

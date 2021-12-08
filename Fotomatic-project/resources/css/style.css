@@ -18,8 +18,6 @@ html,body
   position: relative;
   top: 5.3125rem; /* To offset for fixed header. */
 }
-.desktop logo {
-}
 
 .center {
   text-align: center;
@@ -402,13 +400,15 @@ div .images-container img {
 
 #quotes-section {
   background-color: #f3f3f3;
+  padding-top: 80px;
+  padding-bottom: 80px;
 }
 
 #quotes-section content {
   padding: 5rem 0;
 }
 
-#quotes-section quote {
+#quotes-section .quote {
   padding-right: 1.875rem;
   font-family: "Palatino", serif;
   font-size: 1.875rem;
@@ -419,6 +419,7 @@ div .images-container img {
 
 #quotes-section quote-citation {
   height: 1.875rem;
+  padding-left: 30px;
 }
 
 @media only screen and (max-width: 760px) {
@@ -431,7 +432,7 @@ div .images-container img {
     line-height: 1.4;
   }
 
-  #quotes-section quote-citation {
+  #quotes-section .quote-citation {
     display: block;
     padding-top: 1rem;
     margin: auto;
@@ -443,16 +444,24 @@ div .images-container img {
 footer {
   background-color: #9b9b9b;
   padding: 1.5rem 2rem;
+  display: flex;
+  align-items: center;
 }
 
 footer .content {
   color: white;
-  display: flex;
   font-size: .75rem;
+  display: flex;
+  width: 100%;
 }
 
 footer .copyright {
-  flex-grow: 1;
+    flex: 1;
+}
+
+footer .location {
+    flex: 2;
+    text-align: right;
 }
 
 @media only screen and (min-width: 760px) {
